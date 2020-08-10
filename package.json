@@ -1,0 +1,32 @@
+{
+  "name": "rd-a11y-audit-page",
+  "version": "1.0.0",
+  "description": "Integration testing phase for accessible HTML source.",
+  "main": "a11y-check.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pages": "ts-node a11y-pages",
+    "check": "ts-node a11y-check",
+    "start": "npm run pages && npm run check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyfranklin/rd-a11y-audit-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyfranklin/rd-a11y-audit-page/issues"
+  },
+  "homepage": "https://github.com/tyfranklin/rd-a11y-audit-page#readme",
+  "dependencies": {
+    "@types/node": "^14.0.27",
+    "bluebird": "^3.7.2",
+    "chalk": "^4.1.0",
+    "fs-extra": "^9.0.1",
+    "glob": "^7.1.6",
+    "lighthouse": "^6.2.0",
+    "lodash": "^4.17.19",
+    "progress": "^2.0.3"
+  }
+}
